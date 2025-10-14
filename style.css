@@ -96,7 +96,7 @@ body {
 
 .banner .subtitle {
     font-size: 1.25rem;
-    color: white;
+    color: #fff;
     line-height: 1.25;
     padding-top: .5rem;
 }
@@ -106,7 +106,7 @@ body {
 }
 
 .buttons .btn {
-    color: white;
+    color: #fff;
     padding: 0.6rem 2rem;
     margin-right: .75rem;
     font-weight: 600;
@@ -147,12 +147,12 @@ body {
 }
 
 .footer {
-    margin: 100px auto;
+    margin: 100px auto 0;
     width: 80%;
     color: #808080;
 }
 
-.footer .social {
+.footer .social i {
     padding-right: 26px;
     font-size: 26px;
 }
