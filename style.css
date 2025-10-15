@@ -1,10 +1,11 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0 auto;
-    padding: 0;
+    overflow-x: hidden;
     font-family: arial;
     background-color: black;
 }
@@ -33,6 +34,11 @@ body {
 .header {
     display: flex;
     align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    margin-right: 40px;
 }
 
 .logo img {
@@ -88,6 +94,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    z-index: 10;
 }
 
 .banner .poster {
@@ -121,6 +128,13 @@ body {
     margin-right: 0.5rem;
 }
 
+.content-section{
+    position: relative;
+    z-index: 20;
+    padding: 0 50px;
+    margin-top: -150px;
+}
+
 .category {
     height: 200px;
 }
@@ -130,20 +144,22 @@ body {
     font-size: 18px;
     line-height: 17px;
     font-weight: 600;
+    display: block;
 }
 
 .slider {
     margin-top: .8rem;
     display: flex;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
     position: absolute;
-    left: 3.75rem;
-    right: 0;
 }
 
 .slider .movie img {
     max-width: 100%;
     padding-right: 5px;
+    object-fit: cover;
 }
 
 .footer {
